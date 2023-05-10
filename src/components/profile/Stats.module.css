@@ -1,0 +1,17 @@
+
+
+.stats{
+display: flex;
+color: blue;
+}
+
+.label{
+margin-right: 10px;
+font-weight: 500;
+
+}
+
+.quantity{
+    font-style: italic;
+    color: rgb(86, 91, 95);
+}

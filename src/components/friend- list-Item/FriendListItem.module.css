@@ -1,0 +1,35 @@
+.friendList{
+list-style: none;
+margin-bottom: 50px;
+}
+.item{
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 10px;
+}
+.status{
+    background-color: red;
+width: 15px;
+height: 15px;
+border-radius: 100px;
+border: 3px solid #928d87;
+}
+.isOnline{
+background-color: green;
+width: 15px;
+height: 15px;
+border-radius: 100px;
+border: 3px solid #928d87;
+}
+.avatar{
+border-radius: 15px;
+border: 3px solid #928d87;
+background-color: aliceblue;
+}
+.name{
+    border-radius: 10px;
+background-color: aliceblue;
+font-weight: 800;
+}
