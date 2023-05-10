@@ -1,7 +1,5 @@
 import css from './TransactionHistory.module.css';
-console.log(css);
 export const TransactionHistory = props => {
-  console.log(props);
   const transactionHistory = props.items.map(data => {
     return (
       <tr key={data.id} className={css.bodyTableRow}>

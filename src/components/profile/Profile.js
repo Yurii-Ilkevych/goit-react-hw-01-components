@@ -1,5 +1,5 @@
 import css from './Profile.module.css';
-
+import PropTypes from 'prop-types'; 
 export const Profile = ({ urlAvatar, userName, tag, location }) => {
   return (
     <div className={css.description}>
@@ -10,3 +10,9 @@ export const Profile = ({ urlAvatar, userName, tag, location }) => {
     </div>
   );
 };
+
+Profile.propTypes = {
+  imgUrl: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+}

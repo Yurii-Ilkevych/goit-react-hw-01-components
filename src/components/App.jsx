@@ -13,7 +13,6 @@ export const App = () => {
       style={{
         height: '100vh',
         textAlign: "center",
-        // display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
