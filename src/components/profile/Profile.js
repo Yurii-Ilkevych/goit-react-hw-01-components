@@ -19,8 +19,8 @@ export const Profile = ({ urlAvatar, userName, tag, location, followers, views, 
 };
 
 Profile.propTypes = {
-  urlAvatar: PropTypes.string,
-  userName: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  urlAvatar: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 }
