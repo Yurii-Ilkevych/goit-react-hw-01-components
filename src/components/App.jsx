@@ -1,5 +1,5 @@
 import User from 'path/to/user.json';
-import { Profile } from './profile/Profile';
+import { Profile  } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
 import Data from 'path/to/data.json';
 import { FriendListItem } from './friend- list-Item/FriendListItem';
