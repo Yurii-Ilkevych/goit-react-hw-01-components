@@ -8,8 +8,9 @@ function getRandomHexColor() {
 }
 
 export const Statistics = ({ stats, title }) => {
-  return (
-    <section className={css.statistics}>
+  return (   
+    <>
+    { title && <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
       <ul className={css.statList}>
         {stats.map(data => {
@@ -23,8 +24,10 @@ export const Statistics = ({ stats, title }) => {
             </li>
           );
         })}
+
       </ul>
-    </section>
+    </section>}
+    </>
   );
 };
 
@@ -32,5 +35,5 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired
   })),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
