@@ -10,15 +10,15 @@ align-items: center;
 column-gap: 10px;
 }
 .status{
-    background-color: red;
 width: 15px;
 height: 15px;
 border-radius: 100px;
 border: 3px solid #928d87;
 }
-.isOnline{
-background-color: green;
-}
+
+.true{ background-color: green; }
+.false{ background-color: red; }
+
 .avatar{
 border-radius: 15px;
 border: 3px solid #928d87;
