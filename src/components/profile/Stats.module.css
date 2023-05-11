@@ -1,8 +1,7 @@
 
 
 .stats{
-display: flex;
-color: blue;
+text-align: center;
 }
 
 .label{

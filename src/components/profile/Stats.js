@@ -3,7 +3,7 @@ import css from './Stats.module.css';
 
 export const Stats = ({ followers, views, likes }) => {
   return (
-    <ul className={css.Stats}>
+    <ul className={css.stats}>
       <li>
         <span className={css.label}>Followers:</span>
         <span className={css.quantity}>{followers}</span>

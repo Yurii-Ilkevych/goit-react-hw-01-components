@@ -9,16 +9,7 @@ import Transactions from 'path/to/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        textAlign: 'center',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <>
       <Profile
         urlAvatar={User.avatar}
         userName={User.username}
@@ -32,6 +23,6 @@ export const App = () => {
       <Statistics stats={Data} />
       <FriendListItem friends={Friends} />
       <TransactionHistory items={Transactions} />
-    </div>
+    </>
   );
 };
