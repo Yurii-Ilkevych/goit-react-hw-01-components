@@ -11,7 +11,7 @@ export const Profile = ({
   likes,
 }) => {
   return (
-    <>
+    <div className={css.profile}>
       <div className={css.description}>
         <img src={urlAvatar} alt={userName} className={css.avatar} />
         <p className={css.name}>{userName}</p>
@@ -19,7 +19,7 @@ export const Profile = ({
         <p className={css.location}>{location}</p>
       </div>
       <Stats followers={followers} views={views} likes={likes} />
-    </>
+    </div>
   );
 };
 

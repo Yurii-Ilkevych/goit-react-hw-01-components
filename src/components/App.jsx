@@ -1,5 +1,5 @@
 import User from 'path/to/user.json';
-import { Profile  } from './profile/Profile';
+import { Profile } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
 import Data from 'path/to/data.json';
 import { FriendListItem } from './friend- list-Item/FriendListItem';
@@ -19,22 +19,15 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <div
-        style={{
-          marginTop: '100px',
-          marginBottom: '50px',
-        }}
-      >
-        <Profile
-          urlAvatar={User.avatar}
-          userName={User.username}
-          tag={User.tag}
-          location={User.location}
-          followers={User.stats.followers}
-          views={User.stats.views}
-          likes={User.stats.likes}
-        />
-      </div>
+      <Profile
+        urlAvatar={User.avatar}
+        userName={User.username}
+        tag={User.tag}
+        location={User.location}
+        followers={User.stats.followers}
+        views={User.stats.views}
+        likes={User.stats.likes}
+      />
       <Statistics title="Upload stats" stats={Data} />
       <Statistics stats={Data} />
       <FriendListItem friends={Friends} />
